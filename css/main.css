@@ -54,6 +54,7 @@ ul {
   transition: min-height 0.3s;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 20px solid #ed9017;  
 }
 
 .header__inner {
@@ -107,7 +108,7 @@ ul {
   height: 600px;
   background-image: url("../images/Штора.jpg");
   background-size: cover;
-  border-top: 20px solid #ed9017;  
+  /* border-top: 20px solid #ed9017;   */
   border-bottom: 20px solid #ed9017;  
   border-image-source: linear-gradient(#ed9017, #890E0D); 
   border-image-slice: 20;
@@ -115,7 +116,7 @@ ul {
 }
 .slider {
   text-align: center;
-  padding: 40px;
+  padding: 100px;
   font-family: 'Lora', serif;
   text-transform: uppercase;  
   font-weight: bold;
@@ -124,18 +125,28 @@ ul {
 }
 .slider_item {
   font-size: 3em;
+  /* animation: timing 5s infinite alternate; */
+ 
 }
+#blink{
+  display:block;
+}
+#blink1{
+display:none;
+}
+
 .desk {
-  /* background-color: #fbd53f; */
   background: -webkit-linear-gradient(top, #f6e6b4 0%,#ed9017 100%);
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
 }
 .box {
   display: flex;
   justify-content: space-between;
   text-align: center;
   padding: 10px;
+  font-size: 1,5em;
 }
 .box_icon {
   display: inline;
@@ -145,6 +156,9 @@ ul {
 }
 .box-content {
   padding: 0;
+}
+.main {
+background-color: #f8f1dd;
 }
 hr {
   border: none; /* Убираем границу */ 
@@ -158,8 +172,9 @@ hr {
 .title {
   text-align: center;
   margin: 20px;
+  font-size: 2em;
 }
- 
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -167,8 +182,8 @@ hr {
 }
 
 .project {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
   text-align: center;
   width: calc(100%/3);
   display: block;
@@ -187,8 +202,25 @@ hr {
     text-align: justify; 
     margin: 20px;
 }
-.footer {
+ .footer {
   display: flex;
-  flex-wrap: wrap;
-}
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #210000;
+  color: white;
+} 
+
+#map { 
+  border: 10px #ed9017;
+  width: 600px;
+  height: 300px; }
+
+  .uslugi_img {
+    width: 300px;
+  }
+  /* .uslugi_img1 {
+    width: 200px;
+  
+      -webkit-transform: rotate(90deg);  
+  } */
   
