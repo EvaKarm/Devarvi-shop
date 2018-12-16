@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Карнизы, шторы, жалюзи</title>
+    <meta name="keywords" content="Карнизы, шторы, купить шторы, купить карнизы, карнизы для штор, шторы фото, магазин штор, шторы, жалюзи">
+    <meta name="description" content="Купить и заказать шторы, карнизы, жалюзи у нас в магазине. Осуществляем полный цикл работ по родбору, разработке дизайн-проекта и пошива штор на заказ">
+    <link href="https://fonts.googleapis.com/css?family=Lora:900|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+    <div class="topbar">
+        <ul class="topbar_phone">
+            <li>тел.: +7 (903) 729-94-41,</li>
+            <li>+7 (903) 729-94-47</li>
+        </ul>
+        <a href="#popup" class="topbar_contact"><i class="fas fa-phone"></i>Заказать звонок</a>      
+    </div>
+   
+    <header class="header">
+        <div class="header__inner">
+            <a href="../index.html"><img class="header__logo" src="../images/logo.jpg" alt="logo"></a>
+            <h1 class="header__title">Салон Штор</h1>
+            <a id="menu" class="header__menu" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg></a>
+        </div>           
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="uslugi/uslugi.html">Услуги</a></li>
+                <li class="nav__item"><a href="portfolio/portfolio.html">Портфолио</a></li>
+                <li class="nav__item"><a href="shtory/shtory.html">Шторы</a></li>
+                <li class="nav__item"><a href="jalousie/jalousie.html">Жалюзи</a></li>
+                <li class="nav__item"><a href="sale.html">Распродажа</a></li>
+                <li class="nav__item"><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Вы можете отправить заявку по почте, или же приехать в один из наших салонов. </p>        
+    <footer>
+        <section class="footer"> 
+            <div class="contacts">
+            <p>Наши контакты:</p>
+            <ul>
+                 <li> Г. МОСКВА</li>
+                 <li>УЛ. ПРОФСОЮЗНАЯ Д.102, СТР.1</li>
+                 <li> ТЦ "АРЕАЛ" 3 ЭТАЖ</li>
+                 <li>+7 903 729-94-41</li>
+            </ul>
+            <ul>
+                 <li>Г. МОСКВА</li>
+                 <li>УЛ. МИКЛУХО-МАКЛАЯ Д.36,</li>    
+                  <li>ТЦ "МЦ" 3 ЭТАЖ</li>   
+               <li> +7 903 729-94-47</li>
+            </ul>
+         </div>
+            
+        
+            <!-- <address></address> -->
+            <div id="map"></div>
+
+<script>
+  var map;
+  // Create a new blank array for all the listing markers.
+  var markers = [];
+  function initMap() {
+    // Constructor creates a new map - only center and zoom are required.
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 40.7413549, lng: -73.9980244},
+      zoom: 13
+    });
+    // These are the real estate listings that will be shown to the user.
+    // Normally we'd have these in a database instead.
+    var locations = [
+      {title: 'Салон штор "Деварви"', location: {lat: 55.643715, lng: 37.526254}},
+      {title: 'Салон штор "Деварви"', location: {lat: 55.640282, lng: 37.532648}},
+    ];
+    var largeInfowindow = new google.maps.InfoWindow();
+    var bounds = new google.maps.LatLngBounds();
+    // The following group uses the location array to create an array of markers on initialize.
+    for (var i = 0; i < locations.length; i++) {
+      // Get the position from the location array.
+      var position = locations[i].location;
+      var title = locations[i].title;
+      // Create a marker per location, and put into markers array.
+      var marker = new google.maps.Marker({
+        map: map,
+        position: position,
+        title: title,
+        animation: google.maps.Animation.DROP,
+        id: i
+      });
+      // Push the marker to our array of markers.
+      markers.push(marker);
+      // Create an onclick event to open an infowindow at each marker.
+      marker.addListener('click', function() {
+        populateInfoWindow(this, largeInfowindow);
+      });
+      bounds.extend(markers[i].position);
+    }
+    // Extend the boundaries of the map for each marker
+    map.fitBounds(bounds);
+  }
+  // This function populates the infowindow when the marker is clicked. We'll only allow
+  // one infowindow which will open at the marker that is clicked, and populate based
+  // on that markers position.
+  function populateInfoWindow(marker, infowindow) {
+    // Check to make sure the infowindow is not already opened on this marker.
+    if (infowindow.marker != marker) {
+      infowindow.marker = marker;
+      infowindow.setContent('<div>' + marker.title + '</div>');
+      infowindow.open(map, marker);
+      // Make sure the marker property is cleared if the infowindow is closed.
+      infowindow.addListener('closeclick',function(){
+        infowindow.setMarker = null;
+      });
+    }
+  }
+</script>
+<script async defer
+ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZMJBMdO9s3rTqheuext_MlZVDsaYSAVo&v=3&callback=initMap">
+</script>
+    </section>
+        
+</footer> 
+    </main> 
+
+</body>
+</html>

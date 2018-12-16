@@ -114,22 +114,26 @@ ul {
   border-image-slice: 20;
   padding: 2em;
 }
-.slider {
+.slider, .slider1 {
   text-align: center;
-  padding: 100px;
+  padding: 150px;
   font-family: 'Lora', serif;
   text-transform: uppercase;  
   font-weight: bold;
   font-size: 2em;
   color: #210000;
 }
+ .slider1 {
+ margin: 30px;
+} 
+.slider1 p{
+  margin: 20px;
+}
 .slider_item {
-  font-size: 3em;
-  /* animation: timing 5s infinite alternate; */
- 
+  font-size: 3em; 
 }
 #blink{
-  display:block;
+display:block;
 }
 #blink1{
 display:none;
@@ -193,14 +197,8 @@ hr {
   max-width: 100%;
   min-height: 50px;
 }
-.description {
- 
-  font-family: 'Lora', serif;
-  font-style: italic;
-  font-size: 17pt;
-  text-indent: 1.5em; /* Отступ первой строки */
-    text-align: justify; 
-    margin: 20px;
+.skhema {
+  text-align: center;
 }
  .footer {
   display: flex;
@@ -209,18 +207,66 @@ hr {
   background-color: #210000;
   color: white;
 } 
+.contacts p, .contacts ul {
+  padding: 15px; 
+}
+.contacts p {
+  font-weight: bold;
+  font-size: 20px;
+}
 
 #map { 
   border: 10px #ed9017;
   width: 600px;
   height: 300px; }
 
+  /* Оформление страницы услуг */
+  
+.content {
+  margin: 10px 10px;
+}
+.content h2 {
+  text-align: center;
+  padding: 15px;
+}
+
+.content p{
+  padding: 20px;
+  font-size: 20px;
+}
+.content ul {
+font-style: italic;
+font-size: 17px;
+}
+  .figure{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; /* выровняем по центру */
+    text-align: center;
+}
+
+.figure figure{
+    flex:0 1 calc(50% - 10px); /*отнимем margin и скажем растягиваться */
+    margin:5px;
+    box-sizing:border-box; /* чтобы внутренний отступ не влиял когда там будет текст... */
+    min-width:150px; /* мин. ширина блока, чтобы переносились на другой ряд */
+    padding:20px 20px; 
+    min-height: 200px;
+    /* font-size:600%;  */
+    text-align:center; 
+}
   .uslugi_img {
-    width: 300px;
+    width: 400px;
   }
-  /* .uslugi_img1 {
-    width: 200px;
-  
-      -webkit-transform: rotate(90deg);  
-  } */
-  
+figure {
+  text-align: center;
+}
+figcaption {
+  padding: 5px;
+}
+.text {
+  margin: 20px;
+}
+ .text p {
+   padding: 5px;
+ } 
