@@ -96,14 +96,13 @@ ul {
 } 
 /* главная картинка */
 .main_picture {
-  height: 600px;
-  background-image: url("../images/Штора.jpg");
-  background-size: cover;
-  border-bottom: 20px solid #cc6633;  
-  border-image-source: linear-gradient(#cc6633, #8D0B0A); 
-  border-image-slice: 20;
-  padding: 2em;
-  
+    height: 600px;
+    background-image: url("../images/mainpicture.jpg");
+    background-size: cover;
+    border-bottom: 20px solid #cc6633;
+    border-image-source: linear-gradient(#cc6633, #8D0B0A);
+    border-image-slice: 20;
+    padding: 2em;
 }
 .slider, .slider1 {
   text-align: center;

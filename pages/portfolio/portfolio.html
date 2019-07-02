@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,18 +42,18 @@
     <main>
         <div class="grid">
             <div class="grid-itm">
-                <a class="grid-img img1" href=""></a>
-                <p class="grid-title">2018 год</p>
+                <a class="grid-img img1" href="2014-2017.html"></a>
+                <p class="grid-title">2014г. - 2017г.</p>
             </div>
             <div class="grid-itm">
-                <a class="grid-img img2" href=""></a>
-                <p class="grid-title">2017 год</p>
+                <a class="grid-img img2" href="2009-2013.html"></a>
+                <p class="grid-title">2009г. - 2013г.</p>
             </div>
             <div class="grid-itm">
-                <a class="grid-img img3" href=""></a>
-                <p class="grid-title">2004-2010 гг.</p>
+                <a class="grid-img img3" href="2002-2005.html"></a>
+                <p class="grid-title">2002г. - 2005г.</p>
             </div>
-            <div class="grid-itm">
+            <!-- <div class="grid-itm">
                 <a class="grid-img img4" href=""></a>
                 <p class="grid-title">2004-2010 гг.</p>
             </div>
@@ -64,44 +64,9 @@
             <div class="grid-itm">
                 <a class="grid-img img6" href=""></a>
                 <p class="grid-title">2004-2010 гг.</p>
-            </div>
-        </div>
-
-
-
-        <!-- <div class="flex">
-            <div class="item">
-                <img class="project_image" src="images/IMG_0984.JPG" alt="picture of the project">
-            </div>
-            <div class="item">
-                <img class="project_image" src="images/IMG_6249.JPG" alt="picture of the project">
-            </div>
-            <div class="item">
-                <img class="project_image" src="images/IMG_6266.JPG" alt="picture of the project">
-            </div>
-            <div class="item">
-                <img class="project_image" src="images/P4170333.JPG" alt="picture of the project">
-            </div>
-            <div class="item">
-                <img class="project_image" src="images/IMG_9212.JPG" alt="picture of the project">
-            </div>
-            <div class="item">
-                <img class="project_image" src="images/IMG_9236.JPG" alt="picture of the project">
-            </div>                    
-            <div class="item">
-                <img class="project_image" src="images/WP_20131031_002.jpg" alt="picture of the project">
-            </div>
-            <div class="item">
-                <img class="project_image" src="images/DSC_0282a.JPG" alt="picture of the project">
-            </div>
-            <div class="item">
-                <img class="project_image" src="images/CIMG0001.JPG" alt="picture of the project">
-            </div>
-            <div class="item">
-                <img class="project_image" src="images/IMG_8121.JPG" alt="picture of the project">
-            </div>
-        </div> -->
-                <style>
+            </div> -->
+        </div>       
+        <style>
             .grid {
                 display: -webkit-flex;
                 display: flex;
@@ -110,110 +75,56 @@
                 align-items: stretch;
                 padding: 50px 0 20px 0; 
                 background-color: #ffefc9;
-                /* #FFC271 темный */
+            }    
+            .grid-itm {
+                flex:1 1 calc(33.33% - 30px);
+                margin: 5px;
+                display: -webkit-flex;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                flex-direction: column;
+                padding-bottom: 40px;
             }
-    
-.grid-itm {
-	flex:1 1 calc(33.33% - 30px);
-    margin: 5px;
-	display: -webkit-flex;
-	display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    flex-direction: column;
-    padding-bottom: 40px;
-}
-.grid-img {
-	margin: 0 auto 30px;
-    flex: 0 1 80%;
-
-     box-shadow:
- 0px 0px 0px 2px #8D0B0A,
- 0px 0px 0px 14px #fff,
- 0px 0px 0px 18px #cc6633,
- 6px 6px 8px 17px burlywood;   
-     width: 300px; height: 250px;  
-  position	: relative;
- }
-
- /* .projects {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.project {
-  padding-left: 35px;
-  padding-right: 35px;
-  width: calc(100%/3);
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.project_image {
-  max-width: 100%;
-  min-height: 50px;
-  box-shadow:
- 0px 0px 0px 2px #8D0B0A,
- 0px 0px 0px 14px #fff,
- 0px 0px 0px 18px #cc6633,
- 6px 6px 8px 17px burlywood;
-} */
-.grid-cont{
-	flex: 0 1 100%;
-}
-.grid-title {
-    text-align: center;
-    
-}
-
-.img1 {
-    background: url("images/DSCN0517.JPG") no-repeat 0;
-    background-size: auto 250px;
-}
-.img2 {
-    background: url("images/DSCN0519.JPG") no-repeat 0;
-    background-size: auto 250px;
-}
-.img3 {
-    background: url("images/DSCN0523.JPG") no-repeat 0;
-    background-size: auto 250px;
-}
-.img4 {
-    background: url("images/DSCN0525.JPG") no-repeat 0;
-    background-size: auto 250px;
-}
-.img5 {
-    background: url("images/DSCN0528.JPG") no-repeat 0;
-    background-size: auto 250px;
-}
-.img6 {
-    background: url("images/DSCN0546.JPG") no-repeat 0;
-    background-size: auto 250px;
-}
-
-
-
-                /* .flex{
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin: 0 auto; /* выровняем по центру */
-                /* }
-                
-                .item{
-                    flex:0 1 calc(50% - 10px); /*отнимем margin и скажем растягиваться */
-                    /* margin:5px;
-                    box-sizing:border-box; /* чтобы внутренний отступ не влиял когда там будет текст... */
-                    /* min-width:150px; /* мин. ширина блока, чтобы переносились на другой ряд */
-                    /* padding:20px 20px; 
-                    min-height: 200px;
-                    text-align:center; 
-                }
-                .item img {
-                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);                }
-              */ 
-                </style>  
+            .grid-img {
+                margin: 0 auto 30px;
+                box-shadow:
+            0px 0px 0px 2px #8D0B0A,
+            0px 0px 0px 14px #fff,
+            0px 0px 0px 18px #cc6633,
+            6px 6px 8px 17px burlywood;   
+                width: 300px;
+            height: 250px;  
+            position: relative;
+            } 
+            .grid-title {
+                text-align: center;    
+            }
+            .img1 {
+                background: url("images/dscn0517.jpg") no-repeat 0;
+                background-size: auto 250px;
+            }
+            .img2 {
+                background: url("../../images/2009-2013/for web/IMG_6258.jpg") no-repeat 0;
+                background-size: auto 250px;
+            }
+            .img3 {
+                background: url("images/DSCN0523.JPG") no-repeat 0;
+                background-size: auto 250px;
+            }
+            /* .img4 {
+                background: url("images/DSCN0525.JPG") no-repeat 0;
+                background-size: auto 250px;
+            }
+            .img5 {
+                background: url("images/DSCN0528.JPG") no-repeat 0;
+                background-size: auto 250px;
+            }
+            .img6 {
+                background: url("images/DSCN0546.JPG") no-repeat 0;
+                background-size: auto 250px;
+            } */
+        </style>  
         
         
     <footer>
