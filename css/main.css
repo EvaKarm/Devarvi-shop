@@ -95,13 +95,13 @@ ul {
   text-decoration: underline;
 } 
 
- .presentation {
+ .present {
   display: block ;
   border-bottom: 20px solid #cc6633;
   border-image-source: linear-gradient(#cc6633, #8D0B0A);
   border-image-slice: 20;
 }  
- .main_picture {
+ .vizitka {
     display: block;
   position: absolute;
     height: 600px;
