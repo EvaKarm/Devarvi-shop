@@ -1,0 +1,34 @@
+﻿!Описание   вакансии
+!Мое резюме
++!Состав и структура АльфаСтрахования
+!ПО в страховой отрасли
++!Денищенко Галина Николаевна и Муравьев Владимир Сергеевич
+
+!Стр. 17 - основные пункты. 6 часов
++Стр. 30 - ПМизмы. 0.5 часа
++Стр. 64 - Process Chart. 0.5 часа
++Стр. 68 - Process game, игра. 2 часа
+Стр. 133 - Economic Models for Project Selection. 0.5 часа
+!Стр. 152 - Change control board. 0.5 часа
+	здесь на 242 !Стр. 232 - Schedule network analysis. 5 часов
+!Стр. 271 - Estimate costs. 1 час
+!Стр. 280 - Erned Value Measurement. 4 часа
+Стр. 309 - Quality. 0.5 часа
+Стр. 352 - Sponsor. 0.5 часа
+!Стр. 421 - Risk Management. 2 часа
+!Стр. 473 - Procurement Management. 2 часа
+Стр. ??? - Budget 
+
+
+Тесты:
+39-43 PM Framework
+114-118 PM Processes
+200-206 Scope management
+!254-260 Time management
+!294-300 Cost management
+339-346 Quality Management
+385-392 Human Resource Management
+412-417 Communications Management
+!460-467 Risk Management
+531-538 Procurement management
+557-561 Stakeholder Management
